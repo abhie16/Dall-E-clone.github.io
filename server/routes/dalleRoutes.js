@@ -14,7 +14,7 @@ const openai = new OpenAIApi(configuration);
 
 router.route('/').get((req,res) =>{
     res.send("hello from dall e");
-})
+});
 
 router.route('/').post(async (req,res) =>{
     try{
@@ -25,7 +25,7 @@ router.route('/').post(async (req,res) =>{
             n: 1,
             size: '1024x1024',
             response_format: 'b64_json',
-        })
+        });
 
         const image = aiResponse.data.data[0].b64_json;
 
