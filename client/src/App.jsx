@@ -22,6 +22,10 @@ const App = () => {
               <Route path="/create-post" element={<CreatePost />} />
             </Routes>
           </main>
+
+          <header className="w-full flex justify-center items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
+              Made with ❤️ by &nbsp; <a href="https://www.linkedin.com/in/abhie16" target="_blank" rel="noreferrer" className="font-inter font-medium text-[#6469ff]">Abhishek Pandey</a>
+          </header>
         </Router>
   )
 }
